@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QcT-63-OpO">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Umt-H5-Uzb">
+            <objects>
+                <viewController id="QcT-63-OpO" customClass="ViewController" customModule="Medical_Diagnosis" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IXW-AJ-62a"/>
+                        <viewControllerLayoutGuide type="bottom" id="tjf-m6-N8j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yOG-W3-ybK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Todd’s Syndrome Diagnose" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEr-xs-YlD">
+                                <rect key="frame" x="135" y="20" width="331" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="331" id="1tl-zo-n6C"/>
+                                    <constraint firstAttribute="height" constant="30" id="8nU-zg-Jju"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please, answer this set of questions, in order to stablish a quick diagnose." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZy-QN-w2s">
+                                <rect key="frame" x="20" y="72" width="560" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1Ay-RU-IqC"/>
+                                    <constraint firstAttribute="width" constant="560" id="Tkg-j0-F9X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="0.92612048950000003" green="0.97528806720000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please, select your Gender:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jU0-ue-yJp">
+                                <rect key="frame" x="20" y="147" width="221" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please, select your Age Range:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gf-qr-9Hz">
+                                <rect key="frame" x="20" y="217" width="250" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jcm-jo-LFt" userLabel="AgeRange">
+                                <rect key="frame" x="20" y="251" width="205" height="24"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Do you experienced some migraines lately?:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEE-6u-xjx">
+                                <rect key="frame" x="20" y="289" width="344" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="uoG-z1-UZm" userLabel="migraine">
+                                <rect key="frame" x="20" y="326" width="121" height="29"/>
+                                <segments>
+                                    <segment title="Yes"/>
+                                    <segment title="No"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Did you use some hallucinogenic drugs in the past?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMR-14-bqI">
+                                <rect key="frame" x="20" y="367" width="415" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="qej-dh-bfy" userLabel="Drugs">
+                                <rect key="frame" x="20" y="403" width="121" height="29"/>
+                                <segments>
+                                    <segment title="Yes"/>
+                                    <segment title="No"/>
+                                </segments>
+                                <color key="tintColor" red="0.92612048950000003" green="0.97528806720000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RH7-qj-jOy" userLabel="DrugConsume">
+                                <rect key="frame" x="20" y="485" width="205" height="24"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </pickerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="me7-zf-DZ2" userLabel="separator">
+                                <rect key="frame" x="20" y="130" width="560" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Ayl-Wj-xST"/>
+                                    <constraint firstAttribute="width" constant="560" id="L7n-y8-QCo"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How often?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8j-EB-1QZ">
+                                <rect key="frame" x="20" y="448" width="344" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZuT-cL-m1j">
+                                <rect key="frame" x="20" y="533" width="560" height="30"/>
+                                <color key="backgroundColor" red="0.92612048950000003" green="0.97528806720000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="dx5-iL-3gA"/>
+                                    <constraint firstAttribute="width" constant="560" id="keW-O5-efz"/>
+                                </constraints>
+                                <color key="tintColor" red="0.28235294119999998" green="0.66274509800000003" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="2.2250738585072014e-308"/>
+                                <state key="normal" title="Save and Send"/>
+                            </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t7r-KC-GN8" userLabel="Gender">
+                                <rect key="frame" x="20" y="176" width="205" height="24"/>
+                                <color key="tintColor" red="0.92612048950000003" green="0.97528806720000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.28235294119999998" green="0.66274509800000003" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="GEr-xs-YlD" firstAttribute="centerX" secondItem="yOG-W3-ybK" secondAttribute="centerX" id="7X5-Nd-zMK"/>
+                            <constraint firstItem="GEr-xs-YlD" firstAttribute="centerX" secondItem="me7-zf-DZ2" secondAttribute="centerX" id="9t4-LU-xmS"/>
+                            <constraint firstItem="ZuT-cL-m1j" firstAttribute="leading" secondItem="yOG-W3-ybK" secondAttribute="leadingMargin" id="EAF-cW-GzJ"/>
+                            <constraint firstItem="GEr-xs-YlD" firstAttribute="centerX" secondItem="qZy-QN-w2s" secondAttribute="centerX" id="FQ3-XA-FfG"/>
+                            <constraint firstItem="me7-zf-DZ2" firstAttribute="leading" secondItem="yOG-W3-ybK" secondAttribute="leadingMargin" id="MBb-XX-Ack"/>
+                            <constraint firstItem="me7-zf-DZ2" firstAttribute="top" secondItem="qZy-QN-w2s" secondAttribute="bottom" constant="8" id="OzL-x5-TFe"/>
+                            <constraint firstItem="me7-zf-DZ2" firstAttribute="trailing" secondItem="yOG-W3-ybK" secondAttribute="trailingMargin" id="PIf-8K-r6T"/>
+                            <constraint firstItem="qZy-QN-w2s" firstAttribute="leading" secondItem="yOG-W3-ybK" secondAttribute="leadingMargin" id="RII-O1-Q4m"/>
+                            <constraint firstItem="qZy-QN-w2s" firstAttribute="top" secondItem="GEr-xs-YlD" secondAttribute="bottom" constant="22" id="Sz4-Eh-vln"/>
+                            <constraint firstItem="qZy-QN-w2s" firstAttribute="trailing" secondItem="yOG-W3-ybK" secondAttribute="trailingMargin" id="k2P-rK-ELQ"/>
+                            <constraint firstItem="ZuT-cL-m1j" firstAttribute="trailing" secondItem="yOG-W3-ybK" secondAttribute="trailingMargin" id="lcp-xh-GIA"/>
+                            <constraint firstItem="GEr-xs-YlD" firstAttribute="top" secondItem="IXW-AJ-62a" secondAttribute="bottom" id="rxm-jT-Ik7"/>
+                            <constraint firstItem="ZuT-cL-m1j" firstAttribute="centerX" secondItem="yOG-W3-ybK" secondAttribute="centerX" id="u9z-mi-yUB"/>
+                            <constraint firstItem="tjf-m6-N8j" firstAttribute="top" secondItem="ZuT-cL-m1j" secondAttribute="bottom" constant="37" id="yRe-Q7-quY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ageRangePicker" destination="jcm-jo-LFt" id="uhN-5g-QRg"/>
+                        <outlet property="drgusSegmented" destination="qej-dh-bfy" id="EjW-5p-mn4"/>
+                        <outlet property="gendePicker" destination="t7r-KC-GN8" id="Ter-qp-tLx"/>
+                        <outlet property="migrainesSegmented" destination="uoG-z1-UZm" id="6Gc-2D-0Go"/>
+                        <outlet property="oftenPicker" destination="RH7-qj-jOy" id="bGH-4h-6PS"/>
+                        <outlet property="saveButton" destination="ZuT-cL-m1j" id="3E2-0A-v5r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b0D-xp-KCz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="264" y="433"/>
+        </scene>
+    </scenes>
+</document>
