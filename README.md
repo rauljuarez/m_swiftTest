@@ -13,6 +13,10 @@ This App will help doctors identify how likely it is that a person has a neurolo
 Just 2 Views, one contains the UI to capture the inputs, the other one, calculates and displays the info, just that.
 
 
+### Tests
+
+Didnt' got the time to implement the full tests here... sorry guys...
+
 ### Docs
 
 You can se a brief doc, regarding the use of an [API here](API-MedicalDiagnosis.md).
