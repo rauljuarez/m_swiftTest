@@ -11,9 +11,12 @@ import XCTest
 
 class Medical_DiagnosisTests: XCTestCase {
     
+    var vc: ResultsViewController! 
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+        vc = storyboard.instantiateViewControllerWithIdentifier("ResultsVC") as! ResultsViewController
     }
     
     override func tearDown() {
@@ -21,7 +24,9 @@ class Medical_DiagnosisTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testData() {
+        
+        
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }

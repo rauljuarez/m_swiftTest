@@ -39,19 +39,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please, select your Gender:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jU0-ue-yJp">
-                                <rect key="frame" x="20" y="147" width="221" height="21"/>
+                                <rect key="frame" x="20" y="147" width="278" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please, provide your age:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gf-qr-9Hz">
-                                <rect key="frame" x="20" y="235" width="250" height="21"/>
+                                <rect key="frame" x="20" y="235" width="278" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Do you experienced some migraines lately?:" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEE-6u-xjx">
-                                <rect key="frame" x="20" y="338" width="344" height="21"/>
+                                <rect key="frame" x="20" y="327" width="278" height="48"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -64,21 +64,7 @@
                                     <constraint firstAttribute="width" constant="560" id="L7n-y8-QCo"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZuT-cL-m1j">
-                                <rect key="frame" x="20" y="533" width="560" height="30"/>
-                                <color key="backgroundColor" red="0.92612048950000003" green="0.97528806720000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="dx5-iL-3gA"/>
-                                    <constraint firstAttribute="width" constant="560" id="keW-O5-efz"/>
-                                </constraints>
-                                <color key="tintColor" red="0.28235294119999998" green="0.66274509800000003" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="2.2250738585072014e-308"/>
-                                <state key="normal" title="Save and Send"/>
-                                <connections>
-                                    <action selector="saveAndSend:" destination="QcT-63-OpO" eventType="touchUpInside" id="fky-2f-MQq"/>
-                                </connections>
-                            </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="hjn-Ii-tdH" userLabel="migraine">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="hjn-Ii-tdH" userLabel="gender">
                                 <rect key="frame" x="20" y="186" width="121" height="29"/>
                                 <segments>
                                     <segment title="Male"/>
@@ -95,13 +81,13 @@
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Did you use some hallucinogenic drugs in the past?" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMR-14-bqI">
-                                <rect key="frame" x="20" y="425" width="415" height="21"/>
+                                <rect key="frame" x="20" y="425" width="278" height="46"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="qej-dh-bfy" userLabel="Drugs">
-                                <rect key="frame" x="20" y="461" width="121" height="29"/>
+                                <rect key="frame" x="20" y="484" width="121" height="29"/>
                                 <segments>
                                     <segment title="Yes"/>
                                     <segment title="No"/>
@@ -113,9 +99,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="sRg-ZW-xJ6">
-                                <rect key="frame" x="81" y="280" width="94" height="29"/>
-                            </stepper>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZuT-cL-m1j">
+                                <rect key="frame" x="20" y="556" width="560" height="30"/>
+                                <color key="backgroundColor" red="0.92612048950000003" green="0.97528806720000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="dx5-iL-3gA"/>
+                                    <constraint firstAttribute="width" constant="560" id="keW-O5-efz"/>
+                                </constraints>
+                                <color key="tintColor" red="0.28235294119999998" green="0.66274509800000003" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="2.2250738585072014e-308"/>
+                                <state key="normal" title="Save and Send"/>
+                                <connections>
+                                    <action selector="saveAndSend:" destination="QcT-63-OpO" eventType="touchUpInside" id="fky-2f-MQq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.28235294119999998" green="0.66274509800000003" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -132,7 +129,7 @@
                             <constraint firstItem="ZuT-cL-m1j" firstAttribute="trailing" secondItem="yOG-W3-ybK" secondAttribute="trailingMargin" id="lcp-xh-GIA"/>
                             <constraint firstItem="GEr-xs-YlD" firstAttribute="top" secondItem="IXW-AJ-62a" secondAttribute="bottom" id="rxm-jT-Ik7"/>
                             <constraint firstItem="ZuT-cL-m1j" firstAttribute="centerX" secondItem="yOG-W3-ybK" secondAttribute="centerX" id="u9z-mi-yUB"/>
-                            <constraint firstItem="tjf-m6-N8j" firstAttribute="top" secondItem="ZuT-cL-m1j" secondAttribute="bottom" constant="37" id="yRe-Q7-quY"/>
+                            <constraint firstItem="tjf-m6-N8j" firstAttribute="top" secondItem="ZuT-cL-m1j" secondAttribute="bottom" constant="14" id="yRe-Q7-quY"/>
                         </constraints>
                     </view>
                     <connections>
@@ -159,13 +156,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yI-Gd-VVn">
-                                <rect key="frame" x="570" y="28" width="21" height="22"/>
-                                <state key="normal" image="Close"/>
-                                <connections>
-                                    <action selector="closeResults:" destination="PB0-uz-cyH" eventType="touchUpInside" id="d6o-dR-64H"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Todd’s Syndrome Diagnose" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTc-EW-Q0X">
                                 <rect key="frame" x="135" y="50" width="331" height="30"/>
                                 <constraints>
@@ -178,15 +168,54 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yI-Gd-VVn">
+                                <rect key="frame" x="570" y="28" width="21" height="22"/>
+                                <state key="normal" image="Close"/>
+                                <connections>
+                                    <action selector="closeResults:" destination="PB0-uz-cyH" eventType="touchUpInside" id="d6o-dR-64H"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="St0-xe-UmC">
+                                <rect key="frame" x="167" y="240" width="267" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="267" id="5QP-fA-bQo"/>
+                                    <constraint firstAttribute="height" constant="120" id="ClQ-2h-CZg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="100"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="...to have Todd’s Syndrome" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffa-qA-Snw">
+                                <rect key="frame" x="135" y="368" width="331" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="331" id="ADj-kf-Xvh"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="331" id="SiU-WZ-nes"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="bss-6u-pab"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="dd9-5G-9dC"/>
+                                    <constraint firstAttribute="height" constant="30" id="kI0-58-aDW"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="331" id="sAs-cR-zJQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.28235294119999998" green="0.66274509800000003" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="St0-xe-UmC" firstAttribute="centerX" secondItem="S6J-sD-Pxe" secondAttribute="centerX" id="3p2-bT-ygY"/>
+                            <constraint firstItem="ffa-qA-Snw" firstAttribute="top" secondItem="St0-xe-UmC" secondAttribute="bottom" constant="8" symbolic="YES" id="Ac0-4I-IVc"/>
+                            <constraint firstItem="St0-xe-UmC" firstAttribute="centerY" secondItem="S6J-sD-Pxe" secondAttribute="centerY" id="Agj-QW-7By"/>
                             <constraint firstItem="1yI-Gd-VVn" firstAttribute="top" secondItem="G5z-Wq-GQf" secondAttribute="bottom" constant="8" id="EeW-MG-HCQ"/>
+                            <constraint firstItem="ffa-qA-Snw" firstAttribute="centerX" secondItem="S6J-sD-Pxe" secondAttribute="centerX" id="RTL-Fq-SKQ"/>
                             <constraint firstItem="MTc-EW-Q0X" firstAttribute="top" secondItem="G5z-Wq-GQf" secondAttribute="bottom" constant="30" id="bnh-5n-CwY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1yI-Gd-VVn" secondAttribute="trailing" constant="-11" id="k38-3G-Ti1"/>
                             <constraint firstItem="MTc-EW-Q0X" firstAttribute="centerX" secondItem="S6J-sD-Pxe" secondAttribute="centerX" id="rMF-Hf-Gq1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="percentLabel" destination="St0-xe-UmC" id="08Z-4h-QdT"/>
+                        <outlet property="resultLabel" destination="ffa-qA-Snw" id="1zk-Hs-FGt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v3I-70-3Kg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
