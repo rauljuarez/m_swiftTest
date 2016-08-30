@@ -14,6 +14,8 @@
 		D32A06F41D7485DB0048A86F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D32A06F31D7485DB0048A86F /* Assets.xcassets */; };
 		D32A06F71D7485DB0048A86F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D32A06F51D7485DB0048A86F /* LaunchScreen.storyboard */; };
 		D32A07021D7485DB0048A86F /* Medical_DiagnosisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32A07011D7485DB0048A86F /* Medical_DiagnosisTests.swift */; };
+		D32A070D1D75BC170048A86F /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32A070C1D75BC170048A86F /* ResultsViewController.swift */; };
+		D32A070E1D75BC170048A86F /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32A070C1D75BC170048A86F /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,7 @@
 		D32A06FD1D7485DB0048A86F /* Medical DiagnosisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Medical DiagnosisTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D32A07011D7485DB0048A86F /* Medical_DiagnosisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medical_DiagnosisTests.swift; sourceTree = "<group>"; };
 		D32A07031D7485DB0048A86F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D32A070C1D75BC170048A86F /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,7 @@
 				D32A06F51D7485DB0048A86F /* LaunchScreen.storyboard */,
 				D32A06F81D7485DB0048A86F /* Info.plist */,
 				D32A06F01D7485DB0048A86F /* Medical_Diagnosis.xcdatamodeld */,
+				D32A070C1D75BC170048A86F /* ResultsViewController.swift */,
 			);
 			path = "Medical Diagnosis";
 			sourceTree = "<group>";
@@ -203,6 +207,7 @@
 				D32A06EC1D7485DB0048A86F /* ViewController.swift in Sources */,
 				D32A06F21D7485DB0048A86F /* Medical_Diagnosis.xcdatamodeld in Sources */,
 				D32A06EA1D7485DB0048A86F /* AppDelegate.swift in Sources */,
+				D32A070D1D75BC170048A86F /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D32A07021D7485DB0048A86F /* Medical_DiagnosisTests.swift in Sources */,
+				D32A070E1D75BC170048A86F /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +400,7 @@
 				D32A07081D7485DB0048A86F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D32A07091D7485DB0048A86F /* Build configuration list for PBXNativeTarget "Medical DiagnosisTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +409,7 @@
 				D32A070B1D7485DB0048A86F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
